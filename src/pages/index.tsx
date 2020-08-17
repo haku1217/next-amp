@@ -1,6 +1,6 @@
 import { useAmp } from 'next/amp'
 
-export const config = { amp: 'hybrid' }
+export const config = { amp: true }
 
 const imgSrc = 'https://placekitten.com/1000/1000'
 const Index = () => {

@@ -7,10 +7,11 @@ export const config = { amp: true }
 type Props = {
   title: string
   description: string
+  githubUrl: string
 }
-const Index: NextPage<Props> = ({ title, description }) => {
+const Index: NextPage<Props> = ({ title, description, githubUrl }) => {
   return (
-    <Layout siteTitle={title} siteDescription={description}>
+    <Layout siteTitle={title} siteDescription={description} githubUrl={githubUrl}>
       <BlogList />
     </Layout>
   )
@@ -23,7 +24,8 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       title: configData.title,
-      description: configData.description
+      description: configData.description,
+      githubUrl: configData.repositoryUrl
     }
   }
 }

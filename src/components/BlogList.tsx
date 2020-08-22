@@ -1,6 +1,6 @@
 const BlogList = () => (
   <>
-    <h3>List of all blog posts will go here</h3>
+    <h3>ブログ一覧</h3>
     <style jsx>
       {`
         div {

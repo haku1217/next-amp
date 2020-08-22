@@ -8,16 +8,10 @@ type Props = {
   title: string
   description: string
 }
-const imgSrc = 'https://placekitten.com/1000/1000'
 const Index: NextPage<Props> = ({ title, description }) => {
   return (
     <Layout siteTitle={title} siteDescription={description}>
-      <p>
-        {title}
-        <br />
-        {description}
-        Welcome to the <amp-img alt="ニャンコ" src={imgSrc} width="1000" height="1000" layout="responsive"></amp-img>
-      </p>
+      <BlogList />
     </Layout>
   )
 }

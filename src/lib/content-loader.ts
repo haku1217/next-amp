@@ -9,7 +9,7 @@ export const listContentFiles = () => {
   return filenames
 }
 
-export const readContentFile = async ({ slug }: any) => {
+export const readContentFile = async ({ slug }: { slug: string }) => {
   const raw = fs.readFileSync(join(dir, `${slug}.md`), 'utf-8')
   const matterResult = matter(raw)
   return {

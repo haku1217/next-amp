@@ -10,15 +10,15 @@ type Props = {
   siteTitle: string
   frontmatter: string
   markdownBody: string
+  githubUrl: string
 }
 
-const BlogTemplate: NextPage<Props> = ({ siteTitle, frontmatter, markdownBody }) => {
+const BlogTemplate: NextPage<Props> = ({ siteTitle, frontmatter, markdownBody, githubUrl }) => {
   return (
     <>
-      <Layout siteTitle={siteTitle}>
-        <div id="container">
-          <div />
-          <article>
+      <Layout siteTitle={siteTitle} githubUrl={githubUrl}>
+        <div className="container">
+          <article className="article">
             <h1>{frontmatter}</h1>
             <div>
               <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }} />
@@ -28,16 +28,13 @@ const BlogTemplate: NextPage<Props> = ({ siteTitle, frontmatter, markdownBody })
       </Layout>
 
       <style jsx>{`
-        #container {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: auto;
-          margin: 10px 20px;
+        .container {
+          margin-right: auto;
+          margin-left: auto;
+          max-width: 960px;
         }
-        @media (max-width: 480px) {
-          #container {
-            grid-template-columns: 1fr;
-          }
+        .article {
+          margin: 10px 20px;
         }
       `}</style>
     </>
@@ -53,7 +50,8 @@ export const getStaticProps: GetStaticProps<any, any> = async ({ params }) => {
     props: {
       frontmatter: data.title,
       markdownBody: data.content,
-      siteTitle: config.title
+      siteTitle: config.title,
+      githubUrl: config.repositoryUrl
     }
   }
 }

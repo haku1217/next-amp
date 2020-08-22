@@ -8,9 +8,9 @@ type Props = {
 const Header: FC<Props> = ({ siteTitle }) => (
   <header className="header">
     <nav className="nav" role="navigation" aria-label="main navigation">
-      <Link href="/">
+      <a href="/">
         <h1>{siteTitle}</h1>
-      </Link>
+      </a>
     </nav>
     <style jsx>
       {`

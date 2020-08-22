@@ -23,16 +23,6 @@ const Layout: FC<Props> = ({ children, siteTitle, siteDescription }) => (
         .content {
           flex-grow: 1;
         }
-        @media (min-width: 768px) {
-          .layout {
-            display: block;
-          }
-          .content {
-            flex-grow: none;
-            width: 70vw;
-            margin-left: 30vw;
-          }
-        }
       `}
     </style>
   </section>

@@ -14,14 +14,33 @@ type Props = {
 
 const BlogTemplate: NextPage<Props> = ({ siteTitle, frontmatter, markdownBody }) => {
   return (
-    <Layout siteTitle={siteTitle}>
-      <article>
-        <h1>{frontmatter}</h1>
-        <div>
-          <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }} />
+    <>
+      <Layout siteTitle={siteTitle}>
+        <div id="container">
+          <div />
+          <article>
+            <h1>{frontmatter}</h1>
+            <div>
+              <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }} />
+            </div>
+          </article>
         </div>
-      </article>
-    </Layout>
+      </Layout>
+
+      <style jsx>{`
+        #container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          margin: 10px 20px;
+        }
+        @media (max-width: 480px) {
+          #container {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
+    </>
   )
 }
 export default BlogTemplate

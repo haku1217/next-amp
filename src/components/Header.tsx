@@ -1,6 +1,4 @@
-import Link from 'next/link'
 import { FC } from 'react'
-import Head from 'next/head'
 
 type Props = {
   siteTitle: string
@@ -28,7 +26,7 @@ const Header: FC<Props> = ({ siteTitle }) => (
           flex-direction: row;
           align-items: center;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1280pxpx) {
           .header {
             height: 100vh;
             position: fixed;

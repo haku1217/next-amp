@@ -1,6 +1,6 @@
 const withPlugins = require('next-compose-plugins')
 const withOffline = require('next-offline')
-
+const path = require('path')
 const plugins = [
   {
     webpack: function (config) {

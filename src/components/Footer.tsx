@@ -13,7 +13,7 @@ type Props = {
 const Footer: FC<Props> = ({ github }) => (
   <footer className="footer">
     <nav className="nav" role="navigation" aria-label="main navigation">
-      <a href={github} target="_blank">
+      <a href={github} target="_blank" rel="noopener">
         <span className="icon">
           <FontAwesomeIcon
             title="github"

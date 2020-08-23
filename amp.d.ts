@@ -9,5 +9,7 @@ declare namespace JSX {
     }
     interface IntrinsicElements {
         'amp-img': AmpImg
+        'amp-analytics': any
+        'amp-social-share': any
     }
 }

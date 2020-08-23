@@ -10,6 +10,11 @@ class BaseDocument extends Document {
       <Html lang="ja">
         <Head>
           <meta name="theme-color" content="#fff" />
+          <script
+            async
+            custom-element="amp-analytics"
+            src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+          ></script>
         </Head>
         <body>
           <Main />

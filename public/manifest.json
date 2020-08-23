@@ -1,7 +1,7 @@
 {
-    "short_name": "Yadokari",
-    "name": "Yadokari",
-    "description": "",
+    "short_name": "haku-dev",
+    "name": "haku-dev",
+    "description": "技術メモの置き場",
     "icons": [
       {
         "src": "favicons/favicon.ico",

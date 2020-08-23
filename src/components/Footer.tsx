@@ -16,6 +16,7 @@ const Footer: FC<Props> = ({ github }) => (
       <a href={github} target="_blank">
         <span className="icon">
           <FontAwesomeIcon
+            title="github"
             icon={['fab', 'github']}
             style={{ height: '40px', width: '40px', verticalAlign: 'bottom', color: '#ffffff' }}
           />

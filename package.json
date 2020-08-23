@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "rm -f public/service-worker.js && next dev",
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,8 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "gray-matter": "^4.0.2",
     "next": "^9.5.2",
+    "next-compose-plugins": "^2.2.0",
+    "next-offline": "^5.0.2",
     "next-seo": "^4.7.3",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",

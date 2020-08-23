@@ -9,7 +9,11 @@ class BaseDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="description" content="技術メモの置き場" />
           <meta name="theme-color" content="#fff" />
+          <link rel="icon" type="mage/x-icon" href="/favicons/favicon.ico" />
+          <link rel="apple-touch-icon" href="/android-chrome-512x512.png" />
         </Head>
         <body>
           <Main />

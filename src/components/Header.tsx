@@ -12,6 +12,10 @@ const Header: FC<Props> = ({ siteTitle }) => (
     </nav>
     <style jsx>
       {`
+        　header {
+          background-color: #696969;
+          color: #ffffff;
+        }
         h1 {
           margin-bottom: 0;
         }
@@ -19,14 +23,14 @@ const Header: FC<Props> = ({ siteTitle }) => (
           cursor: pointer;
         }
         nav {
-          padding: 1.5rem 1.25rem;
+          padding: 0.5rem 1rem;
           border-bottom: 1px solid #ebebeb;
           display: flex;
           justify-content: space-between;
           flex-direction: row;
           align-items: center;
         }
-        @media (min-width: 1280pxpx) {
+        @media (min-width: 480pxpx) {
           .header {
             height: 100vh;
             position: fixed;

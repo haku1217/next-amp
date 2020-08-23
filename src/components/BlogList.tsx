@@ -1,6 +1,21 @@
-const BlogList = () => (
+import { FC } from 'react'
+
+type Props = {
+  posts: {
+    link: string
+    title: string
+    date: string
+  }[]
+}
+
+const BlogList: FC<Props> = ({ posts }) => (
   <>
-    <h3>ブログ一覧</h3>
+    <h1>ブログ一覧</h1>
+    {posts.map((post, i) => (
+      <li key={i}>
+        {post.date} <a href={post.link}>{post.title}</a>
+      </li>
+    ))}
     <style jsx>
       {`
         div {

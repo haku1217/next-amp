@@ -1,9 +1,9 @@
 ---
-title: ブログを始めます
+title: AMP対応の静的サイトをNextjsで作ってみた
 published: 2020-08-23
 ---
-
-これからブログを始めます。
+TODO
+あとで更新する
 # test
 ## test
 ### test

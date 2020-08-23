@@ -15,6 +15,21 @@ const Meta: FC<Props> = ({ siteTitle, siteDescription }) => (
     </Head>
     <style jsx global>
       {`
+        code {
+          color: #cc7832;
+        }
+        table {
+          border-collapse: collapse;
+          border: 1px solid #ccc;
+        }
+        th,
+        td {
+          padding: 5px 10px;
+          border: 1px solid #ccc;
+        }
+        th {
+          background: #eee;
+        }
         * {
           box-sizing: inherit;
         }
@@ -24,7 +39,6 @@ const Meta: FC<Props> = ({ siteTitle, siteDescription }) => (
         }
         body {
           margin: 0;
-          font-family: 'Work Sans', 'Helvetica Neue', Helvetica, sans-serif;
           overflow-x: hidden;
           color: #000;
           font-size: 16px;
@@ -42,7 +56,7 @@ const Meta: FC<Props> = ({ siteTitle, siteDescription }) => (
           text-decoration-color: inherit;
         }
         ul {
-          list-style: none;
+          // list-style: none;
           margin: 0;
           padding-bottom: 0;
           padding-left: 0;
@@ -158,7 +172,6 @@ const Meta: FC<Props> = ({ siteTitle, siteDescription }) => (
         h5,
         h6,
         p {
-          font-family: 'Work Sans', 'Helvetica Neue', Helvetica, sans-serif;
           margin-left: 0;
           margin-right: 0;
           margin-top: 0;
@@ -188,16 +201,16 @@ const Meta: FC<Props> = ({ siteTitle, siteDescription }) => (
           font-size: 1.2rem;
           letter-spacing: -0.5px;
           line-height: 1.1875;
-          color: #a0a0a0;
+          // color: #a0a0a0;
           font-weight: normal;
         }
         p {
-          font-size: 1.2rem;
+          font-size: 1rem;
           letter-spacing: -0.5px;
           line-height: 1.5;
           color: #464646;
         }
-        @media (min-width: 1280px) {
+        @media (min-width: 480px) {
           h1 {
             font-size: 2rem;
             letter-spacing: -1px;
@@ -212,8 +225,8 @@ const Meta: FC<Props> = ({ siteTitle, siteDescription }) => (
             font-size: 1rem;
             letter-spacing: -0.5px;
             line-height: 1.1875;
-            color: #a0a0a0;
-            font-weight: normal;
+            // color: #a0a0a0;
+            // font-weight: normal;
           }
           p {
             line-height: 1.4375;

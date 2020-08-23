@@ -11,6 +11,7 @@ class BaseDocument extends Document {
         <Head>
           <link rel="manifest" href="/manifest.json" />
           <meta name="description" content="技術メモの置き場" />
+          <meta name="theme_color" content="#000000" />
           <link rel="icon" type="mage/x-icon" href="/favicons/favicon.ico" />
           <link rel="apple-touch-icon" href="/android-chrome-512x512.png" />
           <script

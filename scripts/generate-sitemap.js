@@ -30,6 +30,7 @@ const prettier = require('prettier')
                 return `
                         <url>
                             <loc>${`https://haku-dev.tk${route}`}</loc>
+                            <priority>1.0</priority>
                         </url>
                     `
               })

@@ -259,7 +259,6 @@ npx ts-node index.ts
          authorId: 1 } ],
     profile: { id: 1, bio: 'I like turtles', userId: 1 } } ]
 ```
-![prisma-trainig-image1.png](/prisma-trainig-image1.png)
 
 ### 所感
 モデルの定義がGraphQLライクなので自分としては馴染みやすいなと

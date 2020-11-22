@@ -61,7 +61,13 @@ export const getStaticProps: GetStaticProps = async () => {
       title: configData.title,
       description: configData.description,
       githubUrl: configData.repositoryUrl,
-      posts: posts
+      posts: posts.sort(function (a, b) {
+        if (a.date < b.date) {
+          return -1
+        } else {
+          return 1
+        }
+      })
     }
   }
 }
